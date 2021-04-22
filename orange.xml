@@ -1,0 +1,234 @@
+<!--
+theme name:     CODY FLUX 
+version:        1.0
+author:         CodyV59
+license:        creative commons CC-BY-NC-SA - https://creativecommons.org/licenses/by-nc-sa/3.0/
+
+credits to:     
+- "Ports" carousel background: "Export" by Jake Dunham from the Noun Project
+-->
+
+<theme>
+    <formatVersion>4</formatVersion>
+
+
+	
+	<feature supported="carousel">
+		<view name="system">
+		  <carousel name="systemcarousel">
+			   <type>horizontal_wheel</type>
+			   <origin>0.5 0.5</origin>
+			   <pos>0.5 0.49</pos>
+			   <size>1 1</size>
+			   <color>00000000</color>
+			   <logoScale>2.00</logoScale>
+			   <logoSize>0.19 0.15</logoSize>
+			   <maxLogoCount>3</maxLogoCount>
+			   <logoRotation>-9</logoRotation>
+			   <logoRotationOrigin>0.5 -25</logoRotationOrigin>
+
+			   <zIndex>75</zIndex>
+		  </carousel>
+		  
+		  <text name="logoText">
+			<color>FFFFFF</color>
+			<fontPath>./_inc/fonts/Acre.otf</fontPath>
+			<forceUppercase>false</forceUppercase>
+		  </text>
+
+		  	<image name="logo">
+				<color>FFFFFFFF</color>
+			</image>
+		  
+		  <image name="carousel_background" extra="true">
+			<path>./_inc/images/orange/background.png</path>
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<maxSize>1 1</maxSize>
+			<rotation>0</rotation>
+
+		</image>
+
+		  <image name="carousel_waves" extra="true">
+			<path>./_inc/images/orange/waves.png</path>
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<maxSize>1 1</maxSize>
+			<rotation>0</rotation>
+
+		</image>
+
+		  
+			<text name="systemInfo">
+				<backgroundColor>11111100</backgroundColor>
+				<color>FFAE00</color>
+				<pos>0 0.72</pos>
+				<size>1 0.062</size>
+				<fontPath>./_inc/fonts/Acre.otf</fontPath>
+				<fontSize>0.038</fontSize>
+
+			</text>
+		</view>
+	</feature>
+
+    <view name="system, basic, detailed, video">
+
+		  <image name="gamelist_background" extra="true">
+			<path>./_inc/images/orange/gamelistbg.png</path>
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<maxSize>1 1</maxSize>
+			<rotation>0</rotation>
+
+		</image>
+
+		<helpsystem name="help">
+			<textColor>FFFFFF</textColor>
+			<iconColor>FFAE00</iconColor>
+			<fontPath>./_inc/fonts/Acre.otf</fontPath>
+			<fontSize>0.037</fontSize>
+		</helpsystem>
+	</view>
+    
+	<view name="basic">
+		<image name="logo" extra="false">
+			<origin>0.5 0</origin>
+			<pos>0.5 0.04</pos>
+			<maxSize>0.45 0.08</maxSize>
+		</image>
+		
+
+		<textlist name="gamelist">
+			<selectorColor>00000000</selectorColor>
+			<selectedColor>ffae00</selectedColor>
+			<primaryColor>ffffff</primaryColor>
+			<secondaryColor>ffff80</secondaryColor>
+			<fontPath>./_inc/fonts/Acre.otf</fontPath>
+			<pos>0.033 0.15</pos>
+			<size>0.937 0.74</size>
+			<fontSize>0.05</fontSize>
+			<lineSpacing>1.51</lineSpacing>
+		</textlist>
+		
+	</view>
+	
+    <view name="detailed">
+		<image name="md_image">
+		<origin>0.5 1</origin>
+		<pos>0.815 0.89</pos>
+		<maxSize>0.325 0.6</maxSize>
+		<default>./_inc/images/missing_logo_${FPlogo}.png</default>
+		</image>
+		
+	</view>
+
+	<feature supported="video">
+		<view name="video">
+			<video name="md_video">
+				<origin>0.6 0.5</origin>
+				<pos>0.74 0.45</pos>
+				<maxSize>0.9 0.75</maxSize>
+				<delay>1</delay>
+				<showSnapshotNoVideo>true</showSnapshotNoVideo>
+				<showSnapshotDelay>true</showSnapshotDelay>
+			</video>
+			
+			<image name="video_mask" extra="true">
+				<path>./_inc/images/orange/snapmask.png</path>
+				<origin>0 0</origin>
+				<pos>0 0</pos>
+				<size>1 1</size>
+				<zIndex>31</zIndex>
+
+			</image>
+			<image name="snap_mask" extra="true">
+				<path>./_inc/images/orange/snapmask2.png</path>
+				<origin>0 0</origin>
+				<pos>0 0</pos>
+				<size>1 1</size>
+				<zIndex>30</zIndex>
+
+			</image>
+
+		</view>
+
+	</feature>
+	
+	<feature supported="z-index">
+		<view name="video">
+			<video name="md_video">
+			<zIndex>30</zIndex>
+			</video>
+			<image name="md_marquee">
+			<origin>1 1</origin>
+			<pos>0.98 0.98</pos>
+			<maxSize>0.28 0.22</maxSize>
+			<zIndex>32</zIndex>
+			</image>
+ <rating name="md_rating">
+         <origin>0.5 0.5</origin>       
+         <pos>0.43 0.92</pos>
+         <size>0.06 0.06</size>
+	 <rotation>0</rotation>
+         <zIndex>50</zIndex>
+         <filledPath>./_inc/images/star_full.png</filledPath>
+         <unfilledPath>./_inc/images/star_hollow.png</unfilledPath>
+        </rating>
+
+
+		</view>
+	</feature>
+	
+	<view name="detailed,video">
+		
+		<image name="logo">
+			<origin>0.5 0</origin>
+			<pos>0.55 0.04</pos>
+			<maxSize>0.30 0.18</maxSize>
+<rotation>-12</rotation>
+		</image>
+		
+		<textlist name="gamelist">
+			<selectorColor>00000000</selectorColor>
+			<selectedColor>ff6c00</selectedColor>
+			<primaryColor>7b3400</primaryColor>
+			<secondaryColor>ffffff</secondaryColor>
+			<fontPath>./_inc/fonts/Acre.otf</fontPath>
+			<pos>0 0</pos>
+			<size>0.34 0.99</size>
+			<fontSize>0.037</fontSize>
+			<lineSpacing>1.51</lineSpacing>
+			<horizontalMargin>0.01</horizontalMargin>
+			<scrollSound>./_art/assets/listscroll.wav</scrollSound>
+			<zIndex>40</zIndex>
+		</textlist>
+	
+	</view>
+	  <view name="menu">
+      <menuBackground name="menubg">
+      <color>171717</color>
+      </menuBackground>
+	<menuText name="menutext">
+	  <fontPath>./_art/Acre.otf</fontPath>
+	  <fontSize>.04</fontSize>
+	  <color>7b3400</color>
+      <separatorColor>7b3400</separatorColor>
+      <selectorColor>${baseColor}</selectorColor>
+      <selectorColorEnd>${gradientEndColor}</selectorColorEnd>
+      <selectedColor>ff6c00</selectedColor>
+      <selectorGradientType>horizontal</selectorGradientType>
+	</menuText>
+     </view>
+	  <view name="screen">
+      <text name="clock">
+      <color>${FPtextColor}</color>
+	  <fontPath>./_inc/fonts/Acre.otf</fontPath>
+      <fontSize>0.035</fontSize>
+      <pos>0.8999 0.936</pos>
+      <size>0.09 0.058</size>
+      <alignment>right</alignment>
+      <verticalAlignment>center</verticalAlignment>
+    </text>
+  </view>
+
+</theme>

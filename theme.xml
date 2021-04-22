@@ -1,0 +1,23 @@
+<theme>
+
+    <formatVersion>4</formatVersion>
+	
+        <include subset="systemview" name="WHITE THEME" >./white.xml</include>
+        <include subset="systemview" name="PURPLE THEME" >./purple.xml</include>
+	<include subset="systemview" name="BLUE THEME" >./blue.xml</include>
+	<include subset="systemview" name="GOLD THEME" >./gold.xml</include>
+	<include subset="systemview" name="GREEN THEME" >./green.xml</include>
+	<include subset="systemview" name="ORANGE THEME" >./orange.xml</include>
+
+
+    <view name="system, basic, detailed, video">
+	
+		<image name="logo">
+			<path>./${system.theme}/system.svg</path>
+			<path>./${system.theme}/system.png</path>
+		</image>
+    </view>
+   
+
+
+</theme>
